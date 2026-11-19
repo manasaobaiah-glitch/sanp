@@ -162,7 +162,7 @@
 
     <!-- Work Together Section -->
     <section class="work-section" id="work-section">
-        <div class="container-fluid">
+        <div class="container">
             <div class="work-layout">
                 <div class="work-copy-column">
                     <div class="work-copy">
@@ -229,162 +229,170 @@
 
     <!-- Scrolling Text Section -->
     <section class="scroll-section">
-        <div class="scroll-track">
+        <div class="container">
+            <div class="scroll-track-wrapper">
+                <div class="scroll-track">
 
-            <div class="scroll-content">
-                <span class="scroll-dot"></span>
-                <h2>Donations</h2>
+                    <div class="scroll-content">
+                        <span class="scroll-dot"></span>
+                        <h2>Donations</h2>
 
-                <span class="scroll-dot"></span>
-                <h2 class="outline-text">Foods</h2>
+                        <span class="scroll-dot"></span>
+                        <h2 class="outline-text">Foods</h2>
 
-                <span class="scroll-dot"></span>
-                <h2>Education</h2>
+                        <span class="scroll-dot"></span>
+                        <h2>Education</h2>
 
-                <span class="scroll-dot"></span>
-                <h2 class="outline-text">Shelter</h2>
+                        <span class="scroll-dot"></span>
+                        <h2 class="outline-text">Shelter</h2>
+                    </div>
+
+                    <!-- Duplicate for continuous scrolling -->
+                    <div class="scroll-content" aria-hidden="true">
+                        <span class="scroll-dot"></span>
+                        <h2>Donations</h2>
+
+                        <span class="scroll-dot"></span>
+                        <h2 class="outline-text">Foods</h2>
+
+                        <span class="scroll-dot"></span>
+                        <h2>Education</h2>
+
+                        <span class="scroll-dot"></span>
+                        <h2 class="outline-text">Shelter</h2>
+                    </div>
+
+                </div>
             </div>
-
-            <!-- Duplicate for continuous scrolling -->
-            <div class="scroll-content" aria-hidden="true">
-                <span class="scroll-dot"></span>
-                <h2>Donations</h2>
-
-                <span class="scroll-dot"></span>
-                <h2 class="outline-text">Foods</h2>
-
-                <span class="scroll-dot"></span>
-                <h2>Education</h2>
-
-                <span class="scroll-dot"></span>
-                <h2 class="outline-text">Shelter</h2>
-            </div>
-
         </div>
     </section>
 
 <!-- Featured Services Section -->
 <section class="services-section" id="services">
 
-    <div class="services-banner">
+    <div class="container">
 
-        <!-- Banner Image Added in HTML -->
-        <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85"
-            alt="Children supported by SANP"
-            class="services-banner-image"
-        >
+        <div class="services-banner">
 
-        <div class="services-overlay"></div>
+            <!-- Banner Image Added in HTML -->
+            <img
+                src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85"
+                alt="Children supported by SANP"
+                class="services-banner-image"
+            >
 
-        <div class="services-heading">
-            <h5>
-                <span class="services-line"></span>
-                Our Top Campaigns
-                <span class="services-line"></span>
-            </h5>
+            <div class="services-overlay"></div>
 
-            <h2>
-                Our Featured Services for <br>
-                Everyone.
-            </h2>
-        </div>
+            <div class="services-heading">
+                <h5>
+                    <span class="services-line"></span>
+                    Our Top Campaigns
+                    <span class="services-line"></span>
+                </h5>
 
-    </div>
-
-    <!-- Service Cards -->
-    <div class="container services-container">
-        <div class="row g-4 justify-content-center">
-
-            <!-- Card 1 -->
-            <div class="col-lg-4">
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-bowl-food"></i>
-                    </div>
-
-                    <h3>Food Nutrition</h3>
-
-                    <p>
-                        Supporting children and families with
-                        nutritious meals and essential food
-                        supplies for healthier lives.
-                    </p>
-
-                    <a href="#donations" class="service-link">
-                        Read More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-lg-4">
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-
-                    <h3>Digital Education</h3>
-
-                    <p>
-                        Helping underprivileged children access
-                        quality education, learning resources
-                        and better opportunities for the future.
-                    </p>
-
-                    <a href="#education" class="service-link">
-                        Read More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-lg-4">
-                <div class="service-card">
-
-                    <div class="service-icon">
-                        <i class="fa-solid fa-hand-holding-medical"></i>
-                    </div>
-
-                    <h3>Medical Aid</h3>
-
-                    <p>
-                        Providing healthcare awareness,
-                        medical assistance and essential
-                        support to vulnerable communities.
-                    </p>
-
-                    <a href="#contact" class="service-link">
-                        Read More
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
+                <h2>
+                    Our Featured Services for <br>
+                    Everyone.
+                </h2>
             </div>
 
         </div>
+
+        <!-- Service Cards -->
+        <div class="services-cards-wrap">
+            <div class="row g-4 justify-content-center">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+
+                        <h3>Food Nutrition</h3>
+
+                        <p>
+                            Supporting children and families with
+                            nutritious meals and essential food
+                            supplies for healthier lives.
+                        </p>
+
+                        <a href="#donations" class="service-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <h3>Digital Education</h3>
+
+                        <p>
+                            Helping underprivileged children access
+                            quality education, learning resources
+                            and better opportunities for the future.
+                        </p>
+
+                        <a href="#education" class="service-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4">
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+
+                        <h3>Medical Aid</h3>
+
+                        <p>
+                            Providing healthcare awareness,
+                            medical assistance and essential
+                            support to vulnerable communities.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Read More
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Donation Text -->
+        <div class="services-bottom">
+
+            <h3>
+                We Donations Poor People Impact on Someone’s Life
+            </h3>
+
+            <a href="#donations" class="services-more-btn">
+                See More
+            </a>
+
+        </div>
+
     </div>
 
 </section>
-
-<!-- Bottom Donation Text -->
-<div class="services-bottom">
-
-    <h3>
-        We Donations Poor People Impact on Someone’s Life
-    </h3>
-
-    <a href="#donations" class="services-more-btn">
-        See More
-    </a>
-
-</div>
 
 
 <!-- Our Causes Section -->
@@ -722,7 +730,8 @@
     <input type="radio" name="donate-slider"
            id="donate-slide-3">
 
-    <div class="donate-slider-layout">
+    <div class="container">
+        <div class="donate-slider-layout">
 
         <!-- Left Content -->
         <div class="donate-slider-left">
@@ -926,8 +935,148 @@
         </div>
 
     </div>
+    </div>
 
 </section>
+
+<!-- Main Footer -->
+<footer class="main-footer" id="contact">
+
+    <!-- Pre-Footer Call To Action -->
+    <div class="footer-cta-wrap">
+        <div class="container">
+            <div class="footer-cta-card">
+                <div class="footer-cta-content">
+                    <h5><span class="cta-line"></span> BE A PART OF CHANGE</h5>
+                    <h2>Support Our Mission To Help People In Need</h2>
+                </div>
+                <div class="footer-cta-action">
+                    <a href="#donations" class="footer-donate-btn">
+                        <i class="fa-regular fa-heart"></i>
+                        DONATE NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Footer Content -->
+    <div class="footer-main">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Col 1: About SANP -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget footer-about">
+                        <a class="footer-logo" href="#top" aria-label="SANP home">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                            <div>
+                                <h2>SANP</h2>
+                                <small>Serve And Nurture People</small>
+                            </div>
+                        </a>
+                        <p class="footer-about-text">
+                            Social Action for Needy People (SANP) has been actively working since 1987 to empower rural communities, educate underprivileged children, provide nutritious food, and foster sustainable livelihoods.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#top"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                            <li><a href="#about-sanp"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                            <li><a href="#causes"><i class="fa-solid fa-angle-right"></i> Our Causes</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a></li>
+                            <li><a href="#donations"><i class="fa-solid fa-angle-right"></i> Donations</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 3: Causes & Programs -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Our Programs</h4>
+                        <ul class="footer-links">
+                            <li><a href="#causes"><i class="fa-solid fa-angle-right"></i> Quality Education</a></li>
+                            <li><a href="#causes"><i class="fa-solid fa-angle-right"></i> Food Nutrition</a></li>
+                            <li><a href="#causes"><i class="fa-solid fa-angle-right"></i> Healthcare Support</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Child Protection</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Rural Livelihoods</a></li>
+                            <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Women Self-Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Col 4: Contact & Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Get In Touch</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Hyderabad &amp; Eluru District, Andhra Pradesh, India</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+914027208422">+91-40-27208422</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:info@sanp.org">info@sanp.org</a>
+                            </li>
+                        </ul>
+
+                        <div class="footer-newsletter">
+                            <p>Subscribe for our latest news and updates:</p>
+                            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                                <div class="newsletter-input-group">
+                                    <input type="email" placeholder="Your email address" required aria-label="Your email address">
+                                    <button type="submit" aria-label="Subscribe">
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-inner">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>SANP</strong> (Social Action for Needy People). All Rights Reserved.
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#">Terms of Use</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#donations">Donate</a>
+                    <a href="#top" class="back-to-top" aria-label="Back to top">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
