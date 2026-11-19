@@ -2580,9 +2580,12 @@ body {
 }
 
 .nav-link.active::after {
-    bottom: 0;
+    left: 17.5%;
+    bottom: 8px;
+    width: 65%;
     height: 3px;
     background: #dc171f;
+    border-radius: 3px;
 }
 
 .donate-btn {
