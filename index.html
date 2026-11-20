@@ -49,13 +49,13 @@
             <div class="container">
 
                 <!-- Logo -->
-                <a class="navbar-brand logo" href="#top" aria-label="SANP home">
-                    <i class="fa-solid fa-hands-holding-child"></i>
-                    <div>
-                        <h2>SANP</h2>
-                        <small>Serve And Nurture People</small>
-                    </div>
-                </a>
+                <img src="./sanp-logo.png" alt="Logo" class="sanp-logo">
+                <div>
+                    <h2>SANP</h2>
+                    <small style="display: block; transform: translateY(-10px) !important;">
+                        Serve And Nurture People
+                    </small>
+                </div>
 
                 <!-- Mobile Toggle -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
@@ -84,7 +84,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
 
                         <li class="nav-item">
@@ -478,10 +478,8 @@
         <div class="container">
 
             <div class="services-banner">
-
-                <!-- Banner Image Added in HTML -->
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85"
-                    alt="Children supported by SANP" class="services-banner-image">
+                <!-- Banner Image -->
+                <img src="feature-bg.jpeg" alt="SANP Featured Services" class="services-banner-image">
 
                 <div class="services-overlay"></div>
 
@@ -660,10 +658,10 @@
                                 <strong>80%</strong>
                             </div>
 
-                            <a href="#donations" class="cause-donate-link">
+                            <button type="button" class="btn btn-danger rounded-pill px-4 py-3 fw-bold"
+                                onclick="location.href='#donations'">
                                 Donate Now
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            </button>
 
                         </div>
 
@@ -709,10 +707,10 @@
                                 <strong>60%</strong>
                             </div>
 
-                            <a href="#donations" class="cause-donate-link">
+                            <button type="button" class="btn btn-danger rounded-pill px-4 py-3 fw-bold"
+                                onclick="location.href='#donations'">
                                 Donate Now
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            </button>
 
                         </div>
 
@@ -758,10 +756,10 @@
                                 <strong>60%</strong>
                             </div>
 
-                            <a href="#donations" class="cause-donate-link">
+                            <button type="button" class="btn btn-danger rounded-pill px-4 py-3 fw-bold"
+                                onclick="location.href='#donations'">
                                 Donate Now
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
+                            </button>
 
                         </div>
 
@@ -868,20 +866,17 @@
 
                         <!-- Image 1 -->
                         <div class="know-image-one">
-                            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=85"
-                                alt="Children supported by charity">
+                            <img src="meeting.png" alt="meeting">
                         </div>
 
                         <!-- Image 2 -->
                         <div class="know-image-two">
-                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=85"
-                                alt="Children receiving education">
+                            <img src="feature-bg.jpeg" alt="Children receiving education">
                         </div>
 
                         <!-- Image 3 -->
                         <div class="know-image-three">
-                            <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=600&q=85"
-                                alt="Community volunteers">
+                            <img src="group.jpeg" alt="Community volunteers">
                         </div>
 
                         <!-- Supporters Box -->
@@ -904,8 +899,233 @@
         </div>
 
     </section>
+    <!-- Gallery Section -->
+    <section class="sanp-gallery-section" id="gallery">
+        <div class="container-fluid">
 
-    <!-- Main Footer -->
+            <div class="gallery-heading">
+                <h5>OUR GALLERY</h5>
+
+                <h2>Moments of Hope & Happiness</h2>
+
+                <p>
+                    Every picture tells a story of kindness, compassion, and hope.
+                    Explore the beautiful moments of SANP's journey as we support
+                    education, share essentials, and bring smiles to the lives
+                    of those in need.
+                </p>
+            </div>
+
+            <div class="coverflow-slider">
+
+                <!-- Images -->
+                <div class="coverflow-track">
+
+                    <div class="coverflow-item">
+                        <img src="./feature-bg.jpeg" alt="SANP Education">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./serve-food.jpeg" alt="SANP Food Distribution">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./clothes.png" alt="SANP Clothing">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./meeting.png" alt="SANP Community">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./group.jpeg" alt="SANP Students">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./helping.jpeg" alt="SANP Helping Hands">
+                    </div>
+
+                    <!-- Add More Images Here -->
+                    <div class="coverflow-item">
+                        <img src="./header-img.jpeg" alt="SANP Event">
+                    </div>
+
+                    <div class="coverflow-item">
+                        <img src="./activities.jpeg" alt="SANP Activities">
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="gallery-navigation">
+                    <button class="gallery-prev" type="button">&#10094;</button>
+                    <button class="gallery-next" type="button">&#10095;</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SANP Blog Section -------------------------------------------------------------->
+    <section class="sanp-blog-section" id="blog">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side Content -->
+                <div class="col-lg-7">
+                    <div class="sanp-blog-content">
+
+                        <h5>OUR SUCCESS STORIES</h5>
+
+                        <h2>
+                            EMPOWERING DREAMS <br>
+                            <span>CELEBRATING SUCCESS</span>
+                        </h2>
+
+                        <p>
+                            Every child deserves the opportunity to learn, grow, and achieve
+                            their dreams. At SANP, we believe that education is the foundation
+                            for a brighter and more successful future.
+
+                            Through our educational support and continuous encouragement,
+                            we help students overcome challenges, build confidence, and
+                            move closer to their goals.
+
+                            One of our inspiring success stories is a dedicated student
+                            who achieved an excellent rank in her Intermediate examinations.
+                            Her achievement reflects the power of determination, hard work,
+                            and the importance of having the right support.
+
+                            Stories like hers motivate us to continue empowering young minds,
+                            creating opportunities, and helping more children turn their
+                            dreams into reality. Together, we can inspire hope and build
+                            a better tomorrow.
+
+                        </p>
+
+                        <div class="sanp-blog-buttons">
+                            <a href="#student-story" class="blog-btn-primary">
+                                Read Her Story &rarr;
+                            </a>
+
+                            <a href="#gallery" class="blog-btn-outline">
+                                Explore Our Impact &nearr;
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Side Images -->
+                <div class="col-lg-5">
+                    <div class="sanp-blog-images">
+
+                        <img src="./education.jpeg" alt="SANP Education" class="blog-img blog-img-one">
+
+                        <img src="./student.jpeg" alt="SANP Students" class="blog-img blog-img-two">
+
+                        <img src="./supoorting grils.jpeg" alt="SANP Community" class="blog-img blog-img-three">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+   <!-- Contact Us Section -->
+<section class="sanp-contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="sanp-contact-heading">
+            <h5>CONTACT US</h5>
+            <h2>Get in Touch & Make a Difference</h2>
+            <p>
+                Have a question, suggestion, or want to support our cause?
+                Reach out to us or make a donation today.
+            </p>
+        </div>
+
+        <div class="sanp-contact-box">
+
+            <!-- Left Side Image -->
+            <div class="sanp-contact-image">
+                <img src="./donation.jpeg" alt="SANP Donation">
+            </div>
+
+            <!-- Right Side Form -->
+            <div class="sanp-contact-form">
+
+                <!-- SANP Logo -->
+                <div class="sanp-contact-logo">
+                    <img src="./sanp-logo.png" alt="SANP Logo">
+                </div>
+
+                <h3>SANP Donation Form</h3>
+
+                <form>
+
+                    <label for="contact-name">Full Name *</label>
+                    <input type="text" id="contact-name"
+                        placeholder="Enter your full name" required>
+
+                    <label for="contact-phone">Phone Number *</label>
+                    <input type="tel" id="contact-phone"
+                        placeholder="Enter your phone number" required>
+
+                    <label for="contact-email">Email *</label>
+                    <input type="email" id="contact-email"
+                        placeholder="Enter your email" required>
+
+                    <label for="contact-amount">Donation Amount *</label>
+                    <select id="contact-amount" required>
+                        <option value="">Select Amount</option>
+                        <option value="500">₹500</option>
+                        <option value="1000">₹1000</option>
+                        <option value="2000">₹2000</option>
+                        <option value="5000">₹5000</option>
+                    </select>
+
+                    <label>Payment Details</label>
+
+                    <div class="sanp-payment-options">
+
+                        <label>
+                            <input type="radio" name="payment" value="upi" checked>
+                            UPI
+                        </label>
+
+                        <label>
+                            <input type="radio" name="payment" value="bank">
+                            Bank Transfer
+                        </label>
+
+                        <label>
+                            <input type="radio" name="payment" value="card">
+                            Credit / Debit Card
+                        </label>
+
+                    </div>
+
+                    <label for="contact-message">Message</label>
+
+                    <textarea id="contact-message" rows="3"
+                        placeholder="Your message here..."></textarea>
+
+                    <button type="submit" class="sanp-contact-btn">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!-- Main Footer -->
     <footer class="main-footer" id="contact">
 
         <!-- Pre-Footer Call To Action -->
@@ -935,7 +1155,8 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-widget footer-about">
                             <a class="footer-logo" href="#top" aria-label="SANP home">
-                                <i class="fa-solid fa-hands-holding-child"></i>
+                                <!-- <i class="fa-solid fa-hands-holding-child"></i> -->
+                                <img src="./sanp-logo.png" alt="Logo" class="sanp-logo">
                                 <div>
                                     <h2>SANP</h2>
                                     <small>Serve And Nurture People</small>
@@ -1049,7 +1270,48 @@
         </div>
 
     </footer>
+    <script>
+        const galleryItems = document.querySelectorAll(".coverflow-item");
 
+        let currentIndex = 0;
+
+        function updateGallery() {
+            const total = galleryItems.length;
+
+            galleryItems.forEach((item, index) => {
+                item.classList.remove(
+                    "active", "prev", "prev-2", "next", "next-2"
+                );
+
+                const position = (index - currentIndex + total) % total;
+
+                if (position === 0) {
+                    item.classList.add("active");
+                } else if (position === 1) {
+                    item.classList.add("next");
+                } else if (position === 2) {
+                    item.classList.add("next-2");
+                } else if (position === total - 1) {
+                    item.classList.add("prev");
+                } else if (position === total - 2) {
+                    item.classList.add("prev-2");
+                }
+            });
+        }
+
+        document.querySelector(".gallery-next").addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateGallery();
+        });
+
+        document.querySelector(".gallery-prev").addEventListener("click", () => {
+            currentIndex =
+                (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateGallery();
+        });
+
+        updateGallery();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

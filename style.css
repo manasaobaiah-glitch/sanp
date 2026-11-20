@@ -86,10 +86,43 @@ body {
 .logo small {
     font-size: 13px;
     color: black;
+    margin-top: -10px;
+}
+
+.sanp-logo-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sanp-logo-icon .fa-house {
+    font-size: 55px;
+}
+
+.sanp-logo-icon .fa-people-group {
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    bottom: 15px;
+}
+
+.sanp-logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
 }
 
 .navbar-nav {
     gap: 20px;
+}
+
+.main-navbar h2 {
+    color: #dc101b !important;
+    font-weight: 800 !important;
 }
 
 .nav-link {
@@ -113,6 +146,12 @@ body {
     background-color: #d71920;
     bottom: 0;
     left: 0;
+}
+
+.sanp-logo-text small {
+    display: block;
+    position: relative;
+    top: -8px;
 }
 
 /* Donate Button */
@@ -1939,7 +1978,10 @@ img {
     }
 
     .services-banner {
-        height: 390px;
+        background-image: url("./feature-bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .services-heading {
@@ -3142,6 +3184,620 @@ body {
     }
 }
 
+/* ===============================
+   SANP 3D GALLERY
+================================ */
+
+.sanp-gallery-section .container-fluid {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.sanp-gallery-section .gallery-heading {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.gallery-heading {
+    position: relative;
+    top: 15px;
+}
+#gallery h5 {
+    margin-top: 30px;
+}
+.gallery-heading h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+
+    color: #e73545;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.gallery-heading h5::before,
+.gallery-heading h5::after {
+    content: "";
+    width: 85px;
+    height: 2px;
+    background-color: #e73545;
+    position: static;
+    transform: none;
+}
+
+.gallery-heading h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 18px;
+}
+
+.gallery-heading p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* 3D Gallery Slider */
+
+.coverflow-slider {
+    position: relative;
+    width: 100%;
+    height: 510px;
+    perspective: 1200px;
+    overflow: hidden;
+}
+
+.coverflow-track {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    overflow: visible;
+    transform-style: preserve-3d;
+}
+
+.coverflow-item {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 420px;
+    height: 330px;
+    border-radius: 22px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) scale(0.5);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.coverflow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center image */
+.coverflow-item.active {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
+}
+
+/* Left images */
+.coverflow-item.prev {
+    opacity: 1;
+    z-index: 8;
+    transform: translateX(calc(-50% - 310px)) rotateY(35deg) scale(0.8);
+}
+
+.coverflow-item.prev-2 {
+    opacity: 0.8;
+    z-index: 6;
+    transform: translateX(calc(-50% - 520px)) rotateY(50deg) scale(0.65);
+}
+
+/* Right images */
+.coverflow-item.next {
+    opacity: 1;
+    z-index: 8;
+    transform: translateX(calc(-50% + 310px)) rotateY(-35deg) scale(0.8);
+}
+
+.coverflow-item.next-2 {
+    opacity: 0.8;
+    z-index: 6;
+    transform: translateX(calc(-50% + 520px)) rotateY(-50deg) scale(0.65);
+}
+
+/* Navigation buttons */
+.gallery-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.gallery-navigation button {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #e50914;
+    border-radius: 50%;
+    background: white;
+    color: #e50914;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-heading {
+    margin: 0 80px 65px;
+    text-align: center;
+}
+
+.gallery-heading p {
+    max-width: 800px;
+    margin: 25px auto 0;
+    line-height: 1.9;
+}
+
+.gallery-navigation button:hover {
+    background: #e50914;
+    color: white;
+}
+
+
+.coverflow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center image focus */
+.coverflow-item:hover {
+    transform: scale(1);
+    z-index: 5;
+}
+
+.gallery-navigation button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #e50914;
+    background: #fff;
+    color: #e50914;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-navigation button:hover {
+    background: #e50914;
+    color: white;
+}
+
+/* ==========================
+   SANP BLOG SECTION
+========================== */
+
+.sanp-blog-section .container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/* Our Success Stories Section */
+#blog {
+    background-color: #f5f5f5;
+    padding: 70px 0;
+}
+/* Left Side */
+.sanp-blog-content {
+    padding-right: 40px;
+}
+
+.sanp-blog-content h5 {
+    color: #e50914;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.sanp-blog-content h2 {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #202020;
+    margin-bottom: 30px;
+}
+
+.sanp-blog-content h2 span {
+    color: #e50914;
+}
+
+.sanp-blog-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #555;
+    max-width: 650px;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+.sanp-blog-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sanp-blog-buttons a {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.blog-btn-primary {
+    background: #e50914;
+    color: #fff;
+    border: 2px solid #e50914;
+}
+
+.blog-btn-primary:hover {
+    background: #b80710;
+    border-color: #b80710;
+    color: #fff;
+}
+
+.blog-btn-outline {
+    background: transparent;
+    color: #e50914;
+    border: 2px solid #e50914;
+}
+
+.blog-btn-outline:hover {
+    background: #e50914;
+    color: #fff;
+}
+
+/* Blog Small Heading */
+.sanp-blog-content h5 {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    color: #e73545;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0;
+
+    margin-bottom: 25px;
+}
+
+/* Red lines on both sides */
+.sanp-blog-content h5::before,
+.sanp-blog-content h5::after {
+    content: "";
+    width: 55px;
+    height: 2px;
+    background: #e73545;
+    flex-shrink: 0;
+}
+
+/* Main Heading */
+.sanp-blog-content h2 {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.25;
+    color: #202020;
+    margin-bottom: 30px;
+}
+
+.sanp-blog-content h2 span {
+    color: #e50914;
+}
+
+/* Description */
+.sanp-blog-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+/* ==========================
+   SANP BLOG - IMAGE LAYOUT
+========================== */
+
+/* Image Container */
+.sanp-blog-images {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    overflow: visible;
+}
+
+/* All 3 Images - Same Square Shape */
+.blog-img {
+    position: absolute;
+    width: 370px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 6px solid #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effect */
+.blog-img:hover {
+    transform: scale(1.05);
+}
+
+/* First Image - Top Left */
+.blog-img-one {
+    top: -70px;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+}
+
+/* Second Image - Middle */
+.blog-img-two {
+    top: 100px;
+    left: 105px;
+    right: auto;
+    bottom: auto;
+    z-index: 2;
+}
+
+/* Third Image - Bottom Right, Overlapping Second */
+.blog-img-three {
+    top: 300px;
+    right: 100px;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+}
+
+/* ==============================
+   SANP CONTACT US SECTION
+============================== */
+
+.sanp-contact-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+.sanp-contact-section .container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.sanp-contact-form {
+    width: 55%;
+    padding: 40px 45px;
+    background-color: #f5f5f5;
+}
+/* Section Heading */
+
+.sanp-contact-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.sanp-contact-heading h5 {
+    color: #dc3545;
+    font-family: "Kalam", cursive;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sanp-contact-heading h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #151515;
+    margin-bottom: 20px;
+}
+
+.sanp-contact-heading p {
+    font-size: 16px;
+    color: #777777;
+    line-height: 1.8;
+}
+.sanp-contact-heading h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #e60000;
+}
+
+.sanp-contact-heading h5::before,
+.sanp-contact-heading h5::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #e60000;
+}
+
+/* Main Contact Box */
+
+.sanp-contact-box {
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Contact Us - Left Side Image */
+
+.sanp-contact-image {
+    width: 45%;
+    height: 550px;
+    align-self: center;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.sanp-contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.sanp-contact-image:hover img {
+    transform: scale(1.04);
+}
+.sanp-contact-box {
+    background-color: #f5f5f5;
+}
+
+.sanp-contact-image {
+    background-color: #f5f5f5;
+}
+
+.sanp-contact-form {
+    background-color: #f5f5f5;
+}
+
+/* Right Side Form */
+
+.sanp-contact-form {
+    width: 55%;
+    padding: 40px 45px;
+}
+
+/* Right Side Form */
+
+.sanp-contact-form {
+    width: 55%;
+    padding: 40px 45px;
+}
+
+/* SANP Contact Form Logo */
+
+.sanp-contact-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sanp-contact-logo img {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+
+.sanp-contact-form h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Labels */
+
+.sanp-contact-form form>label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #151515;
+    margin-bottom: 8px;
+}
+
+/* Inputs */
+
+.sanp-contact-form input[type="text"],
+.sanp-contact-form input[type="tel"],
+.sanp-contact-form input[type="email"],
+.sanp-contact-form select,
+.sanp-contact-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    background: #ffffff;
+}
+
+.sanp-contact-form input:focus,
+.sanp-contact-form select:focus,
+.sanp-contact-form textarea:focus {
+    border-color: #dc3545;
+}
+
+/* Payment Options */
+
+.sanp-payment-options {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 22px;
+}
+
+.sanp-payment-options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sanp-payment-options input {
+    accent-color: #dc3545;
+}
+
+/* Message */
+
+.sanp-contact-form textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+
+.sanp-contact-btn {
+    width: 100%;
+    padding: 16px;
+    background: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sanp-contact-btn:hover {
+    background: #b91c2b;
+}
+
 /* ==========================================================================
    Main Footer Section
    ========================================================================== */
@@ -3220,7 +3876,7 @@ body {
 }
 
 .footer-donate-btn:hover {
-    background: #111111;
+    background: #dc171f;
     color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
