@@ -736,7 +736,7 @@ body {
 }
 
 
-/* Featured Services Section */
+/* Feature Service Section */
 .services-section {
     position: relative;
     padding: 50px 0;
@@ -3220,7 +3220,7 @@ body {
     top: 20px;
     left: 50%;
     width: 420px;
-    height: 330px;
+    height: 430px;
     border-radius: 22px;
     overflow: hidden;
     opacity: 0;
@@ -3235,7 +3235,103 @@ body {
     height: 100%;
     object-fit: cover;
 }
+/* Image Text */
+.gallery-item-content {
+    padding: 15px 18px;
+    text-align: center;
+    background: white;
+    /* display: none; */
+}
+/* Gallery card */
+.coverflow-item {
+    height: 450px;
+    overflow: hidden;
+    background: white;
+}
 
+/* Image */
+.coverflow-item img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+/* Text */
+.gallery-item-content {
+    display: block;
+    padding: 18px 15px;
+    text-align: center;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Only center image text */
+.coverflow-item.active .gallery-item-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery-item-content h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #e73545;
+    margin-bottom: 8px;
+}
+
+.gallery-item-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.coverflow-item.active {
+    height: 500px !important;
+}
+
+.coverflow-item.active img {
+    height: 300px !important;
+}
+
+.coverflow-item.active .gallery-item-content {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* Slider height */
+.coverflow-track {
+    height: 510px;
+}
+
+.coverflow-slider {
+    height: 630px;
+}
+/* Only center image text */
+.coverflow-item.active .gallery-item-content {
+    display: block;
+}
+
+.gallery-item-content h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #e73545;
+    margin-bottom: 8px;
+}
+
+.gallery-item-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Extra space for text */
+.coverflow-track {
+    height: 480px;
+}
+
+.coverflow-slider {
+    height: 600px;
+}
 /* Center image */
 .coverflow-item.active {
     opacity: 1;
@@ -3256,7 +3352,9 @@ body {
     z-index: 6;
     transform: translateX(calc(-50% - 520px)) rotateY(50deg) scale(0.65);
 }
-
+.coverflow-item.active {
+    height: 410px !important;
+}
 /* Right images */
 .coverflow-item.next {
     opacity: 1;
