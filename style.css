@@ -719,14 +719,14 @@ body {
     -webkit-text-stroke: 2px #dc3545;
 }
 
-/* Red Dots */
+/* Red Dots
 .scroll-dot {
     width: 25px;
     height: 25px;
     background: #dc3545;
     border-radius: 50%;
     flex-shrink: 0;
-}
+} */
 
 /* Right to Left Animation */
 @keyframes scrollLeft {
@@ -1239,52 +1239,7 @@ body {
     margin: 0;
 }
 
-/* Donation Progress */
-.know-donation {
-    margin-bottom: 30px;
-}
 
-.know-progress {
-    width: 100%;
-    height: 10px;
-    background: #f0d5d9;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.know-progress-fill {
-    height: 100%;
-    background: #dc3545;
-    border-radius: 10px;
-    position: relative;
-}
-
-.know-progress-fill span {
-    position: absolute;
-    right: -15px;
-    bottom: 20px;
-    background: #dc3545;
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 5px 8px;
-    border-radius: 5px;
-}
-
-.know-donation-details {
-    display: flex;
-    justify-content: space-between;
-}
-
-.know-donation-details p {
-    font-size: 15px;
-    color: #777777;
-}
-
-.know-donation-details strong {
-    color: #151515;
-}
 
 /* More About Us Button */
 .know-btn {
@@ -1314,17 +1269,6 @@ body {
     width: 100%;
 }
 
-/* Decorative Shape */
-/* .know-decorative-shape {
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    background: black;
-    border-radius: 50%;
-    top: 240px;
-    left: 170px;
-    z-index: 0;
-} */
 
 /* Common Image Styling */
 .know-images img {
@@ -1401,7 +1345,7 @@ body {
     margin: 0;
 }
 
-/* Donation Slider Section */
+/* HELP the people Slider Section */
 .donate-slider-section {
     position: relative;
     padding: 50px 0;
@@ -1409,13 +1353,7 @@ body {
     overflow: hidden;
 }
 
-/* Hide Radio Inputs */
-.donate-slider-section>input {
-    position: absolute;
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-}
+
 
 /* Main Layout */
 .donate-slider-layout {
@@ -1484,13 +1422,7 @@ body {
     color: #ffffff;
 }
 
-/* Navigation Dots */
-.donate-slider-dots {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 70px;
-}
+
 
 .donate-slider-dots label {
     display: block;
@@ -1502,14 +1434,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Active Dots */
-.donate-slider-section:has(#donate-slide-1:checked) label[for="donate-slide-1"],
-.donate-slider-section:has(#donate-slide-2:checked) label[for="donate-slide-2"],
-.donate-slider-section:has(#donate-slide-3:checked) label[for="donate-slide-3"] {
-    background: #dc3545;
-    border-color: #dc3545;
-    box-shadow: 0 0 0 8px #fbe5e8;
-}
+
 
 /* Right Slider */
 .donate-slider-right {
@@ -1519,27 +1444,44 @@ body {
     border-radius: 24px;
 }
 
-/* Slider Track */
+
+/* Automatic Slider */
 .donate-slider-track {
     display: flex;
     gap: 24px;
     width: max-content;
-    animation: none;
-    transition: transform 0.6s ease-in-out;
+    animation: donateAutoSlide 20s ease-in-out infinite;
 }
 
-/* Slide Movement */
-.donate-slider-section:has(#donate-slide-1:checked) .donate-slider-track {
-    transform: translateX(0);
+/* Each card is 388px wide */
+@keyframes donateAutoSlide {
+    0%, 20% {
+        transform: translateX(0);
+    }
+
+    25%, 45% {
+        transform: translateX(-412px);
+    }
+
+    50%, 70% {
+        transform: translateX(-824px);
+    }
+
+    75%, 95% {
+        transform: translateX(-1236px);
+    }
+
+    100% {
+        transform: translateX(-1648px);
+    }
 }
 
-.donate-slider-section:has(#donate-slide-2:checked) .donate-slider-track {
-    transform: translateX(-412px);
+/* Pause when hovering */
+.donate-slider-right:hover .donate-slider-track {
+    animation-play-state: paused;
 }
 
-.donate-slider-section:has(#donate-slide-3:checked) .donate-slider-track {
-    transform: translateX(-824px);
-}
+
 
 /* Donation Cards */
 .donate-slide-card {
