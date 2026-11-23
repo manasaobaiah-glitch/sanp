@@ -3340,9 +3340,9 @@ body {
 }
 
 /* Center image focus */
-.coverflow-item:hover {
-    transform: scale(1);
-    z-index: 5;
+.coverflow-item.active:hover {
+    transform: translateX(-50%) scale(1);
+    z-index: 10;
 }
 
 .gallery-navigation button {
@@ -3925,8 +3925,6 @@ body {
     color: white;
 }
 
-/* Banner Image */
-
 
 
 /* Main Footer */
@@ -3940,6 +3938,11 @@ body {
     height: auto;
     object-fit: contain;
     margin-bottom: 20px;
+}
+footer .footer-logo,
+footer .footer-logo img {
+    background: transparent;
+    background-color: transparent;
 }
 
 .footer-about p {
