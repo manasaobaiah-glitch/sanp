@@ -675,7 +675,7 @@ body {
     width: 100%;
     background: #ffffff;
     overflow: hidden;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .scroll-track-wrapper {
@@ -1396,9 +1396,9 @@ body {
 /* Donation Slider Section */
 .donate-slider-section {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 20px;
     background: #ffffff;
-    overflow: hidden;
+    overflow: clip;
 }
 
 /* Hide Radio Inputs */
@@ -1413,15 +1413,16 @@ body {
 .donate-slider-layout {
     display: flex;
     align-items: flex-start;
-    gap: 36px;
+    gap: 0;
     width: 100%;
     padding-left: 0;
 }
 
 /* Left Side */
 .donate-slider-left {
-    flex: 0 0 380px;
-    max-width: 380px;
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-right: 36px;
     position: sticky;
     top: 120px;
 }
@@ -1449,6 +1450,7 @@ body {
     line-height: 1.2;
     color: #151515;
     margin-bottom: 35px;
+    white-space: normal;
 }
 
 .donate-slider-left>p {
@@ -1480,14 +1482,16 @@ body {
 
 /* Right Slider */
 .donate-slider-right {
-    flex: 1 1 0;
-    min-width: 0;
+    flex: 0 0 30%;
+    min-width: 30%;
+    max-width: 30%;
     overflow: visible;
     border-radius: 24px;
 }
 
 /* Slider Track */
 .donate-slider-track {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1501,13 +1505,16 @@ body {
     position: sticky;
     top: 120px;
     z-index: 1;
-    width: min(388px, 100%);
-    min-height: 520px;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: 560px;
     flex-shrink: 0;
     background: #ffffff;
     border: 1px solid #e1e1e1;
     border-radius: 30px;
-    padding: 22px;
+    padding: 0;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.3s ease;
@@ -1536,7 +1543,7 @@ body {
 .donate-slide-image {
     width: 100%;
     height: 205px;
-    border-radius: 22px;
+    border-radius: 0;
     overflow: hidden;
     margin-bottom: 23px;
 }
@@ -1551,7 +1558,7 @@ body {
 .donate-slide-category {
     color: #555555;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 0 22px 10px;
 }
 
 /* Card Heading */
@@ -1561,51 +1568,14 @@ body {
     font-weight: 700;
     line-height: 1.3;
     min-height: 66px;
-    margin-bottom: 25px;
+    margin: 0 22px 18px;
 }
 
-/* Donation Label */
-.donate-slide-progress-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.donate-slide-progress-info span {
-    color: #151515;
-    font-size: 16px;
-}
-
-.donate-slide-progress-info strong {
-    background: #dc3545;
-    color: #ffffff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    font-size: 13px;
-}
-
-/* Progress Bar */
-.donate-slide-progress {
-    width: 100%;
-    height: 8px;
-    background: #f3dce0;
-    margin-bottom: 15px;
-    overflow: hidden;
-}
-
-.donate-slide-progress div {
-    height: 100%;
-    background: #dc3545;
-}
-
-/* Raised and Goal */
-.donate-slide-amounts {
-    display: flex;
-    justify-content: space-between;
-    color: #151515;
-    font-size: 14px;
-    margin-bottom: 35px;
+.donate-slide-description {
+    color: #777777;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 22px;
 }
 
 /* Donate Now Button */
@@ -1621,7 +1591,7 @@ body {
     font-size: 15px;
     font-weight: 700;
     text-decoration: none;
-    margin-top: auto;
+    margin: 24px 22px 10px;
     transition: all 0.3s ease;
 }
 
@@ -1802,7 +1772,7 @@ img {
 .causes-section,
 .know-section,
 .donate-slider-section {
-    overflow: hidden;
+    overflow: clip;
 }
 
 @media (min-width: 1200px) {
@@ -1886,7 +1856,7 @@ img {
     .causes-section,
     .know-section,
     .donate-slider-section {
-        padding: 50px 0;
+        padding: 40px 0 15px;
     }
 
     .feature-section {
@@ -2023,7 +1993,9 @@ img {
     }
 
     .donate-slider-left {
+        flex: none;
         max-width: 520px;
+        padding-right: 0;
         margin-bottom: 40px;
     }
 
@@ -3811,7 +3783,7 @@ body {
 
 .sanp-footer {
     background: #fff7f7;
-    padding-top: 80px;
+    padding-top: 30px;
     color: #333;
 }
 
@@ -4002,7 +3974,7 @@ body {
 /* Main Footer */
 
 .footer-main {
-    padding: 80px 0 60px;
+    padding: 40px 0 10px;
 }
 
 .footer-logo {
