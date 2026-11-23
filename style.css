@@ -2981,14 +2981,32 @@ body {
     }
 
     .hero-actions {
-        flex-wrap: wrap;
-        gap: 14px 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: clamp(10px, 3vw, 20px);
     }
 
     .hero-btn {
         height: 48px;
-        padding: 0 22px;
-        font-size: 14px;
+        padding: 0 clamp(16px, 3.5vw, 24px);
+        font-size: clamp(13px, 3.2vw, 14px);
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .story-btn {
+        font-size: clamp(13px, 3.2vw, 14px);
+        gap: clamp(8px, 2vw, 12px);
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .play-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 12px;
     }
 
     .hero-info-box {
@@ -4562,11 +4580,50 @@ footer .footer-logo img {
         flex-wrap: wrap;
     }
 
-    .sanp-blog-image,
+    .sanp-blog-images,
     .contact-image-wrap {
         width: 100%;
         max-width: 420px;
-        margin: 24px auto 0;
+        margin: 28px auto 0;
+    }
+
+    .sanp-blog-images {
+        position: relative;
+        height: clamp(390px, 98vw, 480px);
+    }
+
+    .sanp-blog-images .blog-img {
+        width: 82%;
+        max-width: 330px;
+        height: clamp(165px, 45vw, 215px);
+        border-radius: 16px;
+        border: 4px solid #ffffff;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+    }
+
+    .sanp-blog-images .blog-img:hover {
+        transform: none;
+    }
+
+    .sanp-blog-images .blog-img-one {
+        top: 0;
+        left: 0;
+        right: auto;
+        bottom: auto;
+    }
+
+    .sanp-blog-images .blog-img-two {
+        top: clamp(90px, 25vw, 120px);
+        right: 0;
+        left: auto;
+        bottom: auto;
+    }
+
+    .sanp-blog-images .blog-img-three {
+        top: clamp(180px, 50vw, 240px);
+        left: 0;
+        right: auto;
+        bottom: auto;
     }
 
     .sanp-footer {
@@ -4678,11 +4735,43 @@ footer .footer-logo img {
         min-height: 720px;
     }
 
-    .hero-actions .hero-btn,
     .work-buttons a,
     .sanp-blog-buttons a {
         width: 100%;
         justify-content: center;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: clamp(8px, 2.5vw, 14px);
+    }
+
+    .hero-actions .hero-btn {
+        width: auto;
+        height: 44px;
+        padding: 0 clamp(12px, 3vw, 18px);
+        font-size: clamp(11.5px, 3vw, 13px);
+        justify-content: center;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .hero-actions .story-btn {
+        width: auto;
+        font-size: clamp(11.5px, 3vw, 13px);
+        gap: 8px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .hero-actions .play-icon {
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        font-size: 11px;
     }
 
     .hero-info-box {
