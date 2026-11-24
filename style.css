@@ -3554,25 +3554,44 @@ body {
     overflow: visible;
 }
 
-/* All 3 Images - Same Square Shape */
-.blog-img {
+.blog-scroll-wrapper,
+.blog-scroll-track,
+.blog-scroll-group {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-scroll-group[aria-hidden="true"] {
+    display: none;
+}
+
+/* All 3 Images - Desktop Positions */
+.blog-scroll-card {
     position: absolute;
     width: 370px;
     height: 270px;
-    object-fit: cover;
     border-radius: 20px;
     border: 6px solid #ffffff;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
     transition: transform 0.4s ease;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-/* Hover Effect */
-.blog-img:hover {
+.blog-scroll-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-scroll-card:hover {
     transform: scale(1.05);
 }
 
 /* First Image - Top Left */
-.blog-img-one {
+.blog-card-one {
     top: -70px;
     left: 0;
     right: auto;
@@ -3581,7 +3600,7 @@ body {
 }
 
 /* Second Image - Middle */
-.blog-img-two {
+.blog-card-two {
     top: 100px;
     left: 105px;
     right: auto;
@@ -3589,13 +3608,23 @@ body {
     z-index: 2;
 }
 
-/* Third Image - Bottom Right, Overlapping Second */
-.blog-img-three {
+/* Third Image - Bottom */
+.blog-card-three {
     top: 300px;
-    right: 100px;
+    left: 0;
     right: auto;
     bottom: auto;
     z-index: 1;
+}
+
+/* Auto-scroll keyframes for blog section */
+@keyframes blogAutoScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Contact Section */
@@ -4537,7 +4566,108 @@ footer .footer-logo img {
     }
 
     .know-images {
-        height: 390px;
+        position: relative;
+        width: 100%;
+        max-width: 380px;
+        height: 395px;
+        margin: 28px auto 0;
+    }
+
+    .know-decorative-shape {
+        display: none;
+    }
+
+    .know-image-one,
+    .know-image-two,
+    .know-image-three {
+        position: absolute;
+        overflow: hidden;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+    }
+
+    .know-image-one img,
+    .know-image-two img,
+    .know-image-three img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Left Column - Top Image */
+    .know-image-one {
+        top: 24px;
+        left: 0;
+        right: auto;
+        bottom: auto;
+        width: calc(50% - 7px);
+        height: 185px;
+        border-radius: 40px 18px 18px 18px;
+    }
+
+    /* Right Column - Top Image */
+    .know-image-two {
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: auto;
+        width: calc(50% - 7px);
+        height: 205px;
+        border-radius: 18px 40px 18px 18px;
+    }
+
+    /* Left Column - Bottom Image */
+    .know-image-three {
+        top: 223px;
+        left: 0;
+        right: auto;
+        bottom: auto;
+        width: calc(50% - 7px);
+        height: 165px;
+        border-radius: 18px 18px 18px 36px;
+    }
+
+    /* Right Column - Bottom Supporters Card */
+    .know-supporters {
+        position: absolute;
+        top: 219px;
+        right: 0;
+        left: auto;
+        bottom: auto;
+        width: calc(50% - 7px);
+        height: 169px;
+        border-radius: 18px 18px 36px 18px;
+        background: #dc3545;
+        color: #ffffff;
+        padding: 16px 14px;
+        box-shadow: 0 10px 24px rgba(220, 53, 69, 0.22);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+    }
+
+    .know-supporter-icons {
+        display: flex;
+        gap: 8px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .know-supporters h3 {
+        font-size: clamp(26px, 6.5vw, 32px);
+        font-weight: 800;
+        margin-bottom: 2px;
+        line-height: 1;
+    }
+
+    .know-supporters p {
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+        opacity: 0.95;
     }
 
     .donate-slider-left {
@@ -4617,12 +4747,24 @@ footer .footer-logo img {
         font-size: 34px;
     }
 
-    .sanp-blog-buttons,
+    .sanp-blog-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .sanp-blog-buttons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
     .contact-buttons {
         flex-wrap: wrap;
     }
 
-    .sanp-blog-images,
     .contact-image-wrap {
         width: 100%;
         max-width: 420px;
@@ -4630,42 +4772,83 @@ footer .footer-logo img {
     }
 
     .sanp-blog-images {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 28px auto 0;
+        overflow: hidden;
+        padding: 6px 0;
         position: relative;
-        height: clamp(390px, 98vw, 480px);
     }
 
-    .sanp-blog-images .blog-img {
-        width: 82%;
-        max-width: 330px;
-        height: clamp(165px, 45vw, 215px);
-        border-radius: 16px;
+    .blog-scroll-wrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    }
+
+    .blog-scroll-track {
+        display: flex;
+        width: max-content;
+        height: auto;
+        animation: blogAutoScroll 16s linear infinite;
+        will-change: transform;
+    }
+
+    .blog-scroll-wrapper:hover .blog-scroll-track,
+    .blog-scroll-wrapper:active .blog-scroll-track {
+        animation-play-state: paused;
+    }
+
+    .blog-scroll-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-right: 16px;
+        width: max-content;
+        height: auto;
+    }
+
+    .blog-scroll-group[aria-hidden="true"] {
+        display: flex;
+    }
+
+    .blog-scroll-card {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        flex: 0 0 auto;
+        width: min(290px, 78vw);
+        height: clamp(185px, 50vw, 220px);
+        border-radius: 18px;
         border: 4px solid #ffffff;
-        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        overflow: hidden;
+        transform: none !important;
     }
 
-    .sanp-blog-images .blog-img:hover {
-        transform: none;
+    .blog-scroll-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
 
-    .sanp-blog-images .blog-img-one {
-        top: 0;
-        left: 0;
-        right: auto;
-        bottom: auto;
+    .blog-card-one img {
+        object-position: center 20%;
     }
 
-    .sanp-blog-images .blog-img-two {
-        top: clamp(90px, 25vw, 120px);
-        right: 0;
-        left: auto;
-        bottom: auto;
+    .blog-card-two img {
+        object-position: center;
     }
 
-    .sanp-blog-images .blog-img-three {
-        top: clamp(180px, 50vw, 240px);
-        left: 0;
-        right: auto;
-        bottom: auto;
+    .blog-card-three img {
+        object-position: center;
     }
 
     .sanp-footer {
@@ -4823,15 +5006,6 @@ footer .footer-logo img {
     .work-image-box,
     .work-image-column .work-image-box {
         height: 340px;
-    }
-
-    .know-images {
-        height: 350px;
-    }
-
-    .know-supporters {
-        width: 150px;
-        height: 150px;
     }
 
     .footer-banner-divider {
