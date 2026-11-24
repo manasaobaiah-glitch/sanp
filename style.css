@@ -1626,9 +1626,23 @@ body {
         gap: 12px;
     }
 
-    .contact-info span:last-child,
-    .social-icons {
+    .contact-info span:last-child {
         display: none;
+    }
+
+    .social-label {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-icons a {
+        font-size: 13px;
+        color: #ffffff;
     }
 
     .main-navbar {
@@ -2966,9 +2980,23 @@ body {
         gap: 0;
     }
 
-    .contact-info a+a,
-    .social-icons {
+    .contact-info a+a {
         display: none;
+    }
+
+    .social-label {
+        display: none;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-icons a {
+        font-size: 13px;
+        color: #ffffff;
     }
 
     .main-navbar {
