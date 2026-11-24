@@ -1232,6 +1232,126 @@ body {
 }
 
 
+/* =================================
+   GET TO KNOW US - MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 767px) {
+
+    .know-section {
+        padding: 40px 0;
+    }
+
+    /* Left Content */
+    .know-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    /* Subtitle */
+    .know-subtitle {
+        gap: 10px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .know-line {
+        width: 45px;
+    }
+
+    /* Main Heading */
+    .know-content h2 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    /* Highlighted Text */
+    .know-highlight {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    /* Description */
+    .know-description {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    /* Feature Items */
+    .know-features {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .know-feature {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .know-feature + .know-feature {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    /* Feature Icons */
+    .know-feature-icon {
+        min-width: 55px;
+        width: 55px;
+        height: 55px;
+        border-radius: 15px;
+        flex-shrink: 0;
+    }
+
+    .know-feature-icon i {
+        font-size: 22px;
+    }
+
+    /* Feature Heading */
+    .know-feature h3 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+}
+
+/* =================================
+   SMALL MOBILE SCREENS
+================================= */
+
+@media (max-width: 480px) {
+
+    .know-section {
+        padding: 35px 0;
+    }
+
+    .know-content h2 {
+        font-size: 27px;
+    }
+
+    .know-subtitle {
+        font-size: 18px;
+    }
+
+    .know-feature h3 {
+        font-size: 16px;
+    }
+
+    .know-feature-icon {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .know-feature-icon i {
+        font-size: 20px;
+    }
+}
+
 
 /* More About Us Button */
 .know-btn {
@@ -1253,6 +1373,9 @@ body {
     color: #ffffff;
     transform: translateY(-4px);
 }
+
+
+
 
 /* Right Image Layout */
 .know-images {
@@ -3901,11 +4024,6 @@ body {
     flex-shrink: 0;
     margin-left: 20px;
 }
-
-
-
-
-
 .footer-donate-btn {
     display: inline-flex;
     align-items: center;
