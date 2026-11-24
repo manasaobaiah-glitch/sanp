@@ -12,6 +12,15 @@ body {
     --first-fold-height: calc(var(--top-bar-height) + var(--main-navbar-height));
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", Arial, sans-serif;
+}
+
 /* Top Contact Bar */
 .top-bar {
     background-color: #d71920;
@@ -910,10 +919,10 @@ body {
     padding-bottom: 0;
 }
 
-/* Handwritten Heading */
+/* Services Bottom Heading */
 .services-bottom h3 {
-    font-family: "Kalam", cursive;
-    font-size: 30px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 28px;
     font-weight: 700;
     color: #151515;
     margin: 0;
@@ -958,9 +967,10 @@ body {
     justify-content: center;
     gap: 18px;
     color: #dc3545;
-    font-size: 23px;
-    font-family: "Kalam", cursive;
+    font-size: 20px;
+    font-family: "Poppins", Arial, sans-serif;
     font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
 }
 
@@ -1142,9 +1152,10 @@ body {
     align-items: center;
     gap: 15px;
     color: #dc3545;
-    font-family: "Kalam", cursive;
-    font-size: 24px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 20px;
 }
 
@@ -1369,10 +1380,11 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-family: "Kalam", cursive;
+    font-family: "Poppins", Arial, sans-serif;
     color: #dc3545;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
+    letter-spacing: 0.5px;
     margin-bottom: 18px;
 }
 
@@ -3180,10 +3192,10 @@ body {
     gap: 22px;
 
     color: #e73545;
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Poppins", Arial, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
     padding: 0;
     margin-bottom: 25px;
@@ -3589,10 +3601,10 @@ body {
     gap: 18px;
 
     color: #e73545;
-    font-family: "Comic Sans MS", cursive;
-    font-size: 26px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 0.5px;
 
     margin-bottom: 25px;
 }
