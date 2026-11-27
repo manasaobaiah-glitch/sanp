@@ -1,0 +1,954 @@
+/* =====================================
+   Impact Banner Section
+===================================== */
+
+.impact-banner {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+/* Background Image */
+
+.impact-bg-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Background Overlay */
+.impact-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+/* Main Container */
+
+.impact-banner-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Left Side Content */
+
+.impact-left-content {
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.impact-left-content h1 {
+    font-size: 95px;
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Red Line */
+
+.impact-line {
+    width: 100px;
+    height: 7px;
+    background-color: #d71920;
+    margin-bottom: 30px;
+}
+
+/* Description */
+
+.impact-left-content p {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+/* Zigzag Design */
+
+.impact-zigzag {
+    width: 160px;
+}
+
+.impact-zigzag svg {
+    width: 100%;
+    display: block;
+}
+
+/* Right Side Grid */
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    width: 100%;
+}
+
+/* Image Boxes */
+
+.impact-grid-image {
+    height: 270px;
+    overflow: hidden;
+}
+
+.impact-grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Image Hover */
+
+.impact-grid-image:hover img {
+    transform: scale(1.08);
+}
+
+/* Common Content Cards */
+
+.impact-grid-card {
+    height: 270px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Glassmorphism Content Boxes */
+
+.impact-grid .impact-red-card,
+.impact-grid .impact-white-card {
+    background: rgba(255, 255, 255, 0.10) !important;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+/* White Text and Icons */
+
+.impact-grid-card h3,
+.impact-grid-card p,
+.impact-grid-card > i {
+    color: #ffffff;
+}
+
+/* Buttons */
+
+.impact-grid-card a {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Glass Hover Effect */
+
+.impact-grid .impact-grid-card:hover {
+    background: rgba(255, 255, 255, 0.20) !important;
+}
+
+.impact-grid-card a:hover {
+    background: #ffffff;
+    color: #d71920;
+}
+/* Card Icons */
+
+.impact-grid-card > i {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.impact-white-card > i {
+    color: #d71920;
+}
+
+/* Card Heading */
+
+.impact-grid-card h3 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Card Description */
+
+.impact-grid-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Card Buttons */
+
+.impact-grid-card a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid;
+    transition: 0.3s ease;
+}
+
+/* Red Card Button */
+
+.impact-red-card a {
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 50px;
+}
+
+.impact-red-card a:hover {
+    background-color: #ffffff;
+    color: #d71920;
+    border-radius: 50px;
+}
+
+/* White Card Button */
+
+.impact-white-card a {
+    color: #d71920;
+    border-color: #d71920;
+    border-radius: 50px;
+}
+
+.impact-white-card a:hover {
+    background-color: #d71920;
+    color: #ffffff;
+    border-radius: 50px;
+}
+/* =====================================
+   Impact Journey Section
+===================================== */
+
+.impact-journey {
+    background-color: #faf8f5;
+    padding: 50px 0;
+}
+
+/* Section Heading */
+
+.journey-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.journey-heading span {
+    color: #d71920;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.journey-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #171717;
+    margin: 12px 0;
+}
+
+.journey-heading p {
+    font-size: 17px;
+    color: #666666;
+    margin: 0;
+}
+
+/* Timeline Layout */
+
+.journey-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+/* Connecting Dotted Line */
+
+.journey-timeline::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 12.5%;
+    right: 12.5%;
+    border-top: 2px dashed #d71920;
+}
+
+/* Individual Step */
+
+.journey-step {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Number Circle */
+
+.journey-number {
+    width: 80px;
+    height: 80px;
+    background-color: #d71920;
+    color: #ffffff;
+    border: 5px solid #faf8f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 auto 22px;
+    transition: 0.4s ease;
+}
+
+/* Step Heading */
+
+.journey-step h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+/* Step Description */
+
+.journey-step p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666666;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Hover Effects */
+
+.journey-number {
+    transition: all 0.4s ease;
+}
+
+.journey-step:hover .journey-number {
+    background-color: #ffffff;
+    color: #d71920;
+    border: 2px solid #d71920;
+    transform: scale(1.12);
+}
+.journey-step:hover h3 {
+    color: #d71920;
+}
+
+/* Bottom Image */
+
+.journey-image {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.journey-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+    display: block;
+}
+.journey-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Image Overlay */
+
+.journey-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.10)
+    );
+}
+
+/* Image Text */
+
+.journey-image-content {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.journey-image-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+/* =====================================
+   Education Impact Section
+===================================== */
+
+.education-impact {
+    background-color: #faf8f5;
+    padding: 70px 50px;
+    overflow: hidden;
+}
+.education-container {
+    width: 100%;
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+
+/* Top Layout */
+
+.education-top {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* Left Heading */
+
+.education-heading {
+    width: 65%;
+    padding-top: 40px;
+    padding-right: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Subtitle */
+
+.education-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #d71920;
+    margin-bottom: 25px;
+}
+
+.education-subtitle span {
+    width: 35px;
+    height: 1px;
+    background-color: #d71920;
+}
+
+/* Main Heading */
+
+.education-heading h2 {
+    font-size: clamp(32px, 3.8vw, 60px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    color: #171717;
+    margin-bottom: 25px;
+}
+
+.education-heading h2 span {
+    color: #d71920;
+}
+
+/* Description */
+
+.education-heading p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666666;
+}
+
+/* Right Side Image */
+
+.education-image {
+    width: 35%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.education-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.education-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlapping Cards */
+
+.education-cards {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 90%;
+    margin-top: -80px;
+}
+
+/* Individual Card */
+
+.education-card {
+    min-height: 260px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid #ded9d2;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+/* Second Card Highlight */
+
+.education-card:nth-child(2) {
+    background-color: #ffffff;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+/* Card Number and Icon */
+
+.education-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education-card-top span {
+    font-size: 13px;
+    color: #888888;
+}
+
+.education-card-top i {
+    font-size: 20px;
+    color: #d71920;
+}
+
+/* Card Content */
+
+.education-card-content small {
+    font-size: 11px;
+    font-weight: 500;
+    color: #555555;
+    letter-spacing: 0.5px;
+}
+
+.education-card-content h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #171717;
+    margin: 12px 0;
+    transition: color 0.4s ease;
+}
+
+.education-card-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 0;
+}
+
+/* Card Hover Animation */
+
+.education-card:hover {
+    transform: translateY(-12px);
+    background-color: #ffffff;
+    border-color: #d71920;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.education-card:hover h3 {
+    color: #d71920;
+}
+
+/* Bottom Link */
+
+.education-bottom {
+    margin-top: 35px;
+}
+
+.education-bottom a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #171717;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid #d71920;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.education-bottom a i {
+    font-size: 13px;
+    color: #d71920;
+}
+
+.education-bottom a:hover {
+    color: #d71920;
+}
+/* =====================================
+   Food and Nutrition Impact Section
+===================================== */
+
+.food-impact {
+    background-color: #ffffff;
+    padding: 80px 50px;
+    overflow: hidden;
+}
+
+/* Main Container */
+
+.food-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+
+/* Left Side Visual */
+
+.food-visual {
+    position: relative;
+    min-height: 650px;
+    padding-right: 120px;
+    padding-bottom: 90px;
+}
+
+/* Main Image */
+
+.food-main-image {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    border-radius: 22px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.food-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Main Image Hover */
+
+.food-main-image:hover img {
+    transform: scale(1.06);
+}
+
+/* Overlapping Red Card */
+
+.food-floating-card {
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    width: 300px;
+    padding: 25px;
+    background-color: #d71920;
+    border: 6px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    z-index: 3;
+    transition: transform 0.4s ease;
+}
+
+.food-floating-card h3 {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Small Image */
+
+.food-small-image {
+    width: 100%;
+    height: 210px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.food-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Floating Card Hover */
+
+.food-floating-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-floating-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Decorative Dotted Pattern */
+
+.food-dots {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background-image: radial-gradient(
+        #d71920 2.5px,
+        transparent 3px
+    );
+    background-size: 20px 20px;
+    opacity: 0.6;
+}
+
+.food-dots-top {
+    top: 0;
+    right: 0;
+}
+
+.food-dots-bottom {
+    bottom: 0;
+    left: 0;
+}
+
+/* Right Side Content */
+
+.food-content {
+    padding-left: 45px;
+}
+
+/* Subtitle */
+
+.food-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #d71920;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.food-subtitle span {
+    width: 60px;
+    height: 3px;
+    background-color: #d71920;
+}
+
+/* Main Heading */
+
+.food-content h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #171717;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.food-content h2 span {
+    display: block;
+    color: #d71920;
+}
+
+/* Description */
+
+.food-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+/* Food Features */
+
+.food-feature {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.food-feature:last-of-type {
+    border-bottom: none;
+}
+
+/* Feature Icons */
+
+.food-icon {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+    background-color: #fce8e9;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.food-icon i {
+    font-size: 35px;
+    color: #d71920;
+    transition: color 0.4s ease;
+}
+
+/* Feature Content */
+
+.food-feature-content {
+    border-left: 2px solid #dddddd;
+    padding-left: 25px;
+}
+
+.food-feature-content h3 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #171717;
+    margin-bottom: 8px;
+    transition: color 0.4s ease;
+}
+
+.food-feature-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0;
+}
+
+/* Feature Hover Animation */
+
+.food-feature:hover .food-icon {
+    background-color: #d71920;
+    transform: translateY(-5px);
+}
+
+.food-feature:hover .food-icon i {
+    color: #ffffff;
+}
+
+.food-feature:hover h3 {
+    color: #d71920;
+}
+
+/* Support Button */
+
+.food-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #d71920;
+    color: #ffffff;
+    padding: 17px 30px;
+    border: 2px solid #d71920;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: all 0.4s ease;
+}
+
+/* Button Hover */
+
+.food-button:hover {
+    background-color: #ffffff;
+    color: #d71920;
+}
+
+.food-button i {
+    transition: transform 0.3s ease;
+}
+
+.food-button:hover i {
+    transform: translateX(5px);
+}
+.food-content {
+    padding-left: 35px;
+    align-self: start;
+    padding-top: 20px;
+}
+
+.food-subtitle {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.food-content h2 {
+    font-size: 48px;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.food-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.food-feature {
+    gap: 18px;
+    padding: 15px 0;
+}
+
+.food-icon {
+    width: 65px;
+    height: 65px;
+}
+
+.food-icon i {
+    font-size: 28px;
+}
+
+.food-feature-content {
+    padding-left: 18px;
+}
+
+.food-feature-content h3 {
+    font-size: 23px;
+    margin-bottom: 6px;
+}
+
+.food-feature-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.food-button {
+    font-size: 17px;
+    padding: 14px 28px;
+    margin-top: 20px;
+}
