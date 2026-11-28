@@ -627,12 +627,13 @@
 /* Main Container */
 
 .food-container {
-    width: 100%;
     display: grid;
     grid-template-columns: 55% 45%;
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
 }
-
 /* Left Side Visual */
 
 .food-visual {
@@ -696,7 +697,7 @@
 
 .food-small-image {
     width: 100%;
-    height: 210px;
+    height: 180px;
     border-radius: 16px;
     overflow: hidden;
 }
@@ -718,30 +719,6 @@
 
 .food-floating-card:hover img {
     transform: scale(1.06);
-}
-
-/* Decorative Dotted Pattern */
-
-.food-dots {
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    background-image: radial-gradient(
-        #d71920 2.5px,
-        transparent 3px
-    );
-    background-size: 20px 20px;
-    opacity: 0.6;
-}
-
-.food-dots-top {
-    top: 0;
-    right: 0;
-}
-
-.food-dots-bottom {
-    bottom: 0;
-    left: 0;
 }
 
 /* Right Side Content */
@@ -951,4 +928,1269 @@
     font-size: 17px;
     padding: 14px 28px;
     margin-top: 20px;
+}
+/* Clothing Impact Section */
+
+.clothing-impact {
+    background-color: #faf8f5;
+    padding: 70px 50px;
+}
+
+.clothing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
+}
+
+/* Left Side Content */
+
+.clothing-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d71920;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.clothing-subtitle span {
+    width: 40px;
+    height: 2px;
+    background-color: #d71920;
+}
+
+.clothing-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.clothing-content h2 span {
+    display: block;
+    color: #d71920;
+}
+
+.clothing-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Support Button */
+
+.clothing-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #d71920;
+    color: white;
+    padding: 15px 28px;
+    border: 2px solid #d71920;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.clothing-button:hover {
+    background-color: transparent;
+    color: #d71920;
+}
+
+/* Right Side Image */
+
+.clothing-image {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.clothing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* Stories of Change Section */
+
+.stories-impact {
+    background-color: #ffffff;
+    padding: 70px 50px;
+}
+
+.stories-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+/* Section Heading */
+
+.stories-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.stories-heading > span {
+    color: #d71920;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.stories-heading h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+}
+
+.stories-heading h2 span {
+    color: #d71920;
+}
+
+/* Main Layout */
+
+.stories-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Left Side Image */
+
+.stories-image {
+    width: 100%;
+}
+
+.stories-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.stories-image p {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Right Side Content */
+
+.stories-subtitle {
+    color: #d71920;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.stories-content h3 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.stories-content p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Achievement Statistics */
+
+.stories-achievements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+.achievement-item {
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+
+.achievement-item:last-child {
+    border-right: none;
+}
+
+.achievement-item h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #d71920;
+    margin-bottom: 8px;
+}
+
+.achievement-item span {
+    font-size: 14px;
+    color: #666;
+}
+/* Donation and Volunteering Section */
+
+.impact-support {
+    background-color: #f2f2f2;
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.impact-support-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+/* Heart Icon */
+
+.impact-support-icon {
+    color: #d71920;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+
+.impact-support-subtitle {
+    display: block;
+    color: #d71920;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+
+.impact-support h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+/* Description */
+
+.impact-support p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+/* Highlighted Content */
+
+.impact-support h5 {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #222;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.impact-support-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.impact-donate-btn,
+.impact-volunteer-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 30px;
+    border: 2px solid #d71920;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Donation Button */
+
+.impact-donate-btn {
+    background-color: #d71920;
+    color: #ffffff;
+}
+
+.impact-donate-btn:hover {
+    background-color: transparent;
+    color: #d71920;
+}
+
+/* Volunteer Button */
+
+.impact-volunteer-btn {
+    background-color: transparent;
+    color: #d71920;
+}
+
+.impact-volunteer-btn:hover {
+    background-color: #d71920;
+    color: #ffffff;
+}
+
+/* Bottom Red Line */
+
+.impact-support-line {
+    width: 60px;
+    height: 3px;
+    background-color: #d71920;
+    margin: 0 auto 20px;
+}
+
+/* Bottom Quote */
+
+.impact-support-quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+    font-weight: 500;
+}
+/* =====================================
+   Laptop Responsive - 1200px
+===================================== */
+
+@media (max-width: 1200px) {
+
+    /* Impact Banner */
+
+    .impact-left-content h1 {
+        font-size: 75px;
+    }
+
+    .impact-left-content p {
+        font-size: 22px;
+    }
+
+    .impact-grid-image,
+    .impact-grid-card {
+        height: 250px;
+    }
+
+    .impact-grid-card h3 {
+        font-size: 23px;
+    }
+
+    /* Common Section Padding */
+
+    .education-impact,
+    .food-impact,
+    .clothing-impact,
+    .stories-impact,
+    .impact-support {
+        padding: 60px 40px;
+    }
+
+    .education-container,
+    .food-container,
+    .clothing-container,
+    .stories-container,
+    .impact-support-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Education Section */
+
+    .education-card {
+        padding: 20px;
+    }
+
+    .education-card-content h3 {
+        font-size: 25px;
+    }
+
+    /* Food Section */
+
+    .food-content {
+        padding-left: 25px;
+    }
+
+    .food-content h2 {
+        font-size: 40px;
+    }
+
+    .food-visual {
+        padding-right: 70px;
+        min-height: 580px;
+    }
+
+    .food-main-image {
+        height: 490px;
+    }
+
+    .food-floating-card {
+        width: 250px;
+        right: 20px;
+    }
+
+    .food-floating-card h3 {
+        font-size: 24px;
+    }
+
+    /* Clothing Section */
+
+    .clothing-container {
+        gap: 35px;
+    }
+
+    .clothing-content h2 {
+        font-size: 40px;
+    }
+
+    /* Stories Section */
+
+    .stories-row {
+        gap: 30px;
+    }
+
+    .stories-content h3 {
+        font-size: 30px;
+    }
+
+    .achievement-item h4 {
+        font-size: 25px;
+    }
+}
+/* =====================================
+   Tablet Responsive - 991px
+===================================== */
+
+@media (max-width: 991px) {
+
+    /* Impact Banner */
+
+    .impact-banner {
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .impact-left-content {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .impact-left-content h1 {
+        font-size: 70px;
+        line-height: 1.1;
+    }
+
+    .impact-left-content p {
+        font-size: 21px;
+    }
+
+    .impact-line {
+        margin: 0 auto 25px;
+    }
+
+    .impact-zigzag {
+        margin: 0 auto;
+        width: 130px;
+    }
+
+    .impact-grid {
+        gap: 12px;
+    }
+
+    .impact-grid-image,
+    .impact-grid-card {
+        height: 280px;
+    }
+
+    /* Impact Journey */
+
+    .journey-heading h2 {
+        font-size: 38px;
+    }
+
+    .journey-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+    }
+
+    .journey-timeline::before {
+        display: none;
+    }
+
+    .journey-image {
+        height: 380px;
+    }
+
+    .journey-image-content h3 {
+        font-size: 27px;
+    }
+
+    /* Common Section Padding */
+
+    .education-impact,
+    .food-impact,
+    .clothing-impact,
+    .stories-impact,
+    .impact-support {
+        padding: 50px 30px;
+    }
+
+    .education-container,
+    .food-container,
+    .clothing-container,
+    .stories-container,
+    .impact-support-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Education Section */
+
+    .education-top {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .education-heading {
+        width: 100%;
+        padding: 0;
+    }
+
+    .education-heading h2 {
+        font-size: 40px;
+    }
+
+    .education-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .education-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .education-card {
+        min-height: 230px;
+        padding: 25px;
+    }
+
+    /* Food Section */
+
+    .food-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .food-visual {
+        min-height: 540px;
+        padding-right: 90px;
+        padding-bottom: 70px;
+    }
+
+    .food-main-image {
+        height: 470px;
+    }
+
+    .food-floating-card {
+        width: 280px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .food-content {
+        padding: 0;
+    }
+
+    .food-content h2 {
+        font-size: 40px;
+    }
+
+    /* Clothing Section */
+
+    .clothing-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .clothing-content h2 {
+        font-size: 40px;
+    }
+
+    .clothing-image {
+        height: 400px;
+    }
+
+    /* Stories Section */
+
+    .stories-heading h2 {
+        font-size: 38px;
+    }
+
+    .stories-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .stories-image {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .stories-content h3 {
+        font-size: 30px;
+    }
+
+    /* Donation and Volunteering */
+
+    .impact-support h2 {
+        font-size: 38px;
+    }
+
+    .impact-support p {
+        font-size: 16px;
+    }
+}
+/* =====================================
+   Mobile Responsive - 767px
+===================================== */
+
+@media (max-width: 767px) {
+
+    /* Impact Banner */
+
+    .impact-banner {
+        padding: 45px 0;
+    }
+
+    .impact-banner-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .impact-left-content h1 {
+        font-size: 55px;
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+    }
+
+    .impact-left-content p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .impact-line {
+        width: 70px;
+        height: 4px;
+    }
+
+    .impact-zigzag {
+        width: 100px;
+    }
+
+    .impact-grid {
+        gap: 8px;
+    }
+
+    .impact-grid-image {
+        height: 230px;
+    }
+
+    .impact-grid-card {
+        height: auto;
+        min-height: 230px;
+        padding: 15px 10px;
+    }
+
+    .impact-grid-card > i {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .impact-grid-card h3 {
+        font-size: 20px;
+    }
+
+    .impact-grid-card p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .impact-grid-card a {
+        font-size: 12px;
+        padding: 8px 12px;
+        gap: 5px;
+    }
+
+    /* Common Section Padding */
+
+    .education-impact,
+    .food-impact,
+    .clothing-impact,
+    .stories-impact,
+    .impact-support {
+        padding: 40px 20px;
+    }
+
+    /* Impact Journey */
+
+    .impact-journey {
+        padding: 40px 0;
+    }
+
+    .impact-journey > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .journey-heading {
+        margin-bottom: 30px;
+    }
+
+    .journey-heading span {
+        font-size: 13px;
+    }
+
+    .journey-heading h2 {
+        font-size: 30px;
+    }
+
+    .journey-heading p {
+        font-size: 15px;
+    }
+
+    .journey-timeline {
+        gap: 25px 15px;
+        margin-bottom: 30px;
+    }
+
+    .journey-number {
+        width: 65px;
+        height: 65px;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .journey-step h3 {
+        font-size: 21px;
+    }
+
+    .journey-step p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .journey-image {
+        height: 300px;
+    }
+
+    .journey-image-content {
+        bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .journey-image-content h3 {
+        font-size: 23px;
+    }
+
+    /* Education Section */
+
+    .education-subtitle {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .education-heading h2 {
+        font-size: 32px;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+    }
+
+    .education-heading p {
+        font-size: 15px;
+    }
+
+    .education-image {
+        height: 280px;
+    }
+
+    .education-cards {
+        gap: 15px;
+    }
+
+    .education-card {
+        padding: 20px 15px;
+        min-height: 220px;
+    }
+
+    .education-card-content h3 {
+        font-size: 24px;
+    }
+
+    .education-card-content p {
+        font-size: 13px;
+    }
+
+    .education-bottom {
+        margin-top: 25px;
+    }
+
+    /* Food Section */
+
+    .food-visual {
+        min-height: 420px;
+        padding-right: 45px;
+        padding-bottom: 60px;
+    }
+
+    .food-main-image {
+        height: 360px;
+        border-radius: 15px;
+    }
+
+    .food-floating-card {
+        width: 210px;
+        padding: 15px;
+        right: 0;
+        bottom: 0;
+        border-width: 4px;
+        border-radius: 18px;
+    }
+
+    .food-floating-card h3 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .food-small-image {
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .food-subtitle {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .food-subtitle span {
+        width: 35px;
+    }
+
+    .food-content h2 {
+        font-size: 32px;
+    }
+
+    .food-description {
+        font-size: 15px;
+    }
+
+    .food-feature {
+        gap: 12px;
+    }
+
+    .food-icon {
+        width: 55px;
+        height: 55px;
+        border-radius: 12px;
+    }
+
+    .food-icon i {
+        font-size: 24px;
+    }
+
+    .food-feature-content {
+        padding-left: 12px;
+        min-width: 0;
+    }
+
+    .food-feature-content h3 {
+        font-size: 19px;
+    }
+
+    .food-feature-content p {
+        font-size: 14px;
+    }
+
+    .food-button {
+        font-size: 14px;
+        padding: 12px 22px;
+        gap: 10px;
+    }
+
+    /* Clothing Section */
+
+    .clothing-subtitle {
+        font-size: 13px;
+    }
+
+    .clothing-content h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .clothing-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .clothing-image {
+        height: 300px;
+    }
+
+    .clothing-button {
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    /* Stories Section */
+
+    .stories-heading {
+        margin-bottom: 30px;
+    }
+
+    .stories-heading > span {
+        font-size: 13px;
+    }
+
+    .stories-heading h2 {
+        font-size: 30px;
+    }
+
+    .stories-content h3 {
+        font-size: 26px;
+    }
+
+    .stories-content p {
+        font-size: 15px;
+    }
+
+    .stories-subtitle {
+        font-size: 13px;
+    }
+
+    .stories-achievements {
+        gap: 8px;
+    }
+
+    .achievement-item h4 {
+        font-size: 22px;
+    }
+
+    .achievement-item span {
+        font-size: 12px;
+    }
+
+    /* Donation and Volunteering */
+
+    .impact-support-icon {
+        font-size: 42px;
+    }
+
+    .impact-support-subtitle {
+        font-size: 13px;
+    }
+
+    .impact-support h2 {
+        font-size: 30px;
+    }
+
+    .impact-support p {
+        font-size: 15px;
+    }
+
+    .impact-support h5 {
+        font-size: 16px;
+    }
+
+    .impact-support-buttons {
+        gap: 15px;
+    }
+
+    .impact-donate-btn,
+    .impact-volunteer-btn {
+        font-size: 14px;
+        padding: 12px 22px;
+    }
+
+    .impact-support-quote {
+        font-size: 14px;
+    }
+}
+/* =====================================
+   Small Mobile Responsive - 480px
+===================================== */
+
+@media (max-width: 480px) {
+
+    /* Common Section Padding */
+
+    .education-impact,
+    .food-impact,
+    .clothing-impact,
+    .stories-impact,
+    .impact-support {
+        padding: 35px 15px;
+    }
+
+    /* Impact Banner */
+
+    .impact-left-content h1 {
+        font-size: 44px;
+    }
+
+    .impact-left-content p {
+        font-size: 16px;
+    }
+
+    .impact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .impact-grid-image {
+        height: auto;
+        min-height: 220px;
+    }
+
+    .impact-grid-card {
+        height: auto;
+        min-height: 220px;
+        padding: 12px 8px;
+    }
+
+    .impact-grid-card > i {
+        font-size: 25px;
+    }
+
+    .impact-grid-card h3 {
+        font-size: 17px;
+    }
+
+    .impact-grid-card p {
+        font-size: 12px;
+    }
+
+    .impact-grid-card a {
+        font-size: 11px;
+        padding: 7px 9px;
+        max-width: 100%;
+    }
+
+    /* Impact Journey */
+
+    .journey-heading h2 {
+        font-size: 27px;
+    }
+
+    .journey-timeline {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+    }
+
+    .journey-step p {
+        max-width: 280px;
+    }
+
+    .journey-image {
+        height: 250px;
+    }
+
+    .journey-image-content h3 {
+        font-size: 20px;
+    }
+
+    /* Education Section */
+
+    .education-heading h2 {
+        font-size: 28px;
+    }
+
+    .education-image {
+        height: 240px;
+    }
+
+    .education-cards {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .education-card {
+        min-height: 190px;
+        padding: 22px;
+        gap: 20px;
+    }
+
+    /* Food Section */
+
+    .food-visual {
+        min-height: 350px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+    }
+
+    .food-main-image {
+        height: 300px;
+    }
+
+    .food-floating-card {
+        width: 175px;
+        padding: 12px;
+    }
+
+    .food-floating-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .food-small-image {
+        height: 100px;
+    }
+
+    .food-content h2 {
+        font-size: 28px;
+        overflow-wrap: anywhere;
+    }
+
+    .food-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .food-icon i {
+        font-size: 21px;
+    }
+
+    .food-feature-content h3 {
+        font-size: 17px;
+    }
+
+    /* Clothing Section */
+
+    .clothing-content h2 {
+        font-size: 28px;
+    }
+
+    .clothing-image {
+        height: 250px;
+    }
+
+    /* Stories Section */
+
+    .stories-heading h2 {
+        font-size: 27px;
+    }
+
+    .stories-content h3 {
+        font-size: 23px;
+    }
+
+    .stories-achievements {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .achievement-item {
+        border-right: none;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 15px;
+    }
+
+    .achievement-item:last-child {
+        border-bottom: none;
+    }
+
+    .achievement-item h4 {
+        font-size: 26px;
+    }
+
+    /* Donation and Volunteering */
+
+    .impact-support h2 {
+        font-size: 27px;
+    }
+
+    .impact-support-buttons {
+        flex-direction: column;
+    }
+
+    .impact-donate-btn,
+    .impact-volunteer-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+@media (max-width: 360px) {
+
+    .impact-left-content h1 {
+        font-size: 38px;
+    }
+
+    .impact-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .impact-grid-image {
+        height: 220px;
+    }
+
+    .impact-grid-card {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .impact-grid-card h3 {
+        font-size: 22px;
+    }
+
+    .impact-grid-card p {
+        font-size: 14px;
+    }
+
+    .impact-grid-card a {
+        font-size: 13px;
+    }
+
+    .food-floating-card {
+        width: 155px;
+    }
+
+    .food-floating-card h3 {
+        font-size: 16px;
+    }
+
+    .food-content h2,
+    .clothing-content h2,
+    .education-heading h2 {
+        font-size: 25px;
+    }
 }
